@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/mapbox/jsonlint-check.svg)](https://travis-ci.org/mapbox/jsonlint-check)
+
 Check JSON for linted-ness.
 
 ## JavaScript
