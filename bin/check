@@ -1,0 +1,25 @@
+#!/usr/bin/env node
+var check = require('..');
+var fs = require('fs');
+var argv = require('minimist')(process.argv.slice(2));
+
+var help = argv.h || argv.help;
+var space = argv.t || argv.indent;
+var newline = argv.n || argv.newline;
+
+if (!argv._[0] || help) {
+    console.error(fs.readFileSync(__dirname + '/../USAGE.txt', 'utf8'));
+    process.exit(1);
+}
+
+fs.readFile(argv._[0], 'utf8', function(err, json) {
+    if (err) throw err;
+    if (check(json, space, newline)) {
+        console.error('json is linted');
+        process.exit(0);
+    } else {
+        console.error('json is not linted');
+        process.exit(1);
+    }
+});
+

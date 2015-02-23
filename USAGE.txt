@@ -1,0 +1,9 @@
+usage: jsonlint-check <file>
+
+  file      path to json file to check
+
+Options:
+
+  -t, --indent     character(s) to use for indentation (default is 2)
+  -n, --newline    ensure the file ends in a newline charecter (default is false)
+  -h, --help       show this message
