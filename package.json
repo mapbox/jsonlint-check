@@ -1,6 +1,6 @@
 {
   "name": "jsonlint-check",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Check JSON for linted-ness.",
   "main": "index.js",
   "scripts": {
