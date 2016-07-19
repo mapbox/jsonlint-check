@@ -6,6 +6,7 @@ var argv = require('minimist')(process.argv.slice(2));
 var help = argv.h || argv.help;
 var space = argv.t || argv.indent;
 var newline = argv.n || argv.newline;
+var print = argv.p || argv.print;
 
 if (!argv._[0] || help) {
     console.error(fs.readFileSync(__dirname + '/../USAGE.txt', 'utf8'));
@@ -14,7 +15,7 @@ if (!argv._[0] || help) {
 
 fs.readFile(argv._[0], 'utf8', function(err, json) {
     if (err) throw err;
-    if (check(json, space, newline)) {
+    if (check(json, space, newline, print)) {
         console.error('json is linted');
         process.exit(0);
     } else {
