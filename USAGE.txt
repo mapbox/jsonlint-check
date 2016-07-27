@@ -6,4 +6,5 @@ Options:
 
   -t, --indent     character(s) to use for indentation (default is 2)
   -n, --newline    ensure the file ends in a newline charecter (default is false)
+  -p, --print       print out the first line the linting fails on if there is a failure
   -h, --help       show this message
