@@ -5,7 +5,7 @@ Check JSON for linted-ness.
 ## JavaScript
 
 ```javascript
-var check = require('jsonlint-check');
+var check = require('@mapbox/jsonlint-check');
 var json = '{"foo":"bar","baz":"bin"}';
 
 if (check(json, 2, false)) {
