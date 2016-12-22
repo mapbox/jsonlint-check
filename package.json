@@ -1,5 +1,5 @@
 {
-  "name": "jsonlint-check",
+  "name": "@mapbox/jsonlint-check",
   "version": "0.1.0",
   "description": "Check JSON for linted-ness.",
   "main": "index.js",
